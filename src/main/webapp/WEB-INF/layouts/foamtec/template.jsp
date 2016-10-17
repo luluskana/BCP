@@ -10,14 +10,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Foamtec</title>
+    <spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCss" />
+    <spring:url value="/resources/css/custom.css" var="customCss" />
+    <link href="${bootstrapCss}" rel="stylesheet" />
+    <link href="${customCss}" rel="stylesheet" />
 </head>
 <body>
     <tiles:insertAttribute name="header" />
-    <div class="jumbotron">
-        <tiles:insertAttribute name="body"/>
-    </div>
-    <div class="container">
-        <tiles:insertAttribute name="footer"/>
-    </div>
+    <tiles:insertAttribute name="body"/>
+    <tiles:insertAttribute name="footer"/>
+    <spring:url value="/resources/js/jquery.min.js" var="jqueryJs" />
+    <spring:url value="/resources/js/bootstrap.min.js" var="bootstrapJs" />
+    <script src="${jqueryJs}"></script>
+    <script src="${bootstrapJs}"></script>
 </body>
 </html>
