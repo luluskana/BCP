@@ -22,7 +22,7 @@
                         <li class="divider"></li>
                         <li><a href="#">Material Management</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Canon Barcode Compare</a></li>
+                        <li><a href="${home}barcode">Canon Barcode Compare</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Help</a></li>

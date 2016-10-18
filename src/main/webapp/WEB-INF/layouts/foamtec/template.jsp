@@ -14,14 +14,14 @@
     <spring:url value="/resources/css/custom.css" var="customCss" />
     <link href="${bootstrapCss}" rel="stylesheet" />
     <link href="${customCss}" rel="stylesheet" />
+    <spring:url value="/resources/js/jquery.min.js" var="jqueryJs" />
+    <spring:url value="/resources/js/bootstrap.min.js" var="bootstrapJs" />
+    <script src="${jqueryJs}"></script>
+    <script src="${bootstrapJs}"></script>
 </head>
 <body>
     <tiles:insertAttribute name="header" />
     <tiles:insertAttribute name="body"/>
     <tiles:insertAttribute name="footer"/>
-    <spring:url value="/resources/js/jquery.min.js" var="jqueryJs" />
-    <spring:url value="/resources/js/bootstrap.min.js" var="bootstrapJs" />
-    <script src="${jqueryJs}"></script>
-    <script src="${bootstrapJs}"></script>
 </body>
 </html>
